@@ -1,0 +1,50 @@
+{
+  "sourceList": {
+    "animeSources": [
+      {
+        "featureID": "web-selector",
+        "version": "beta",
+        "config": {
+          "name": "稀饭动漫",
+          "baseUrl": "https://dm.xifanacg.com/",
+          "iconUrl": "https://dm.xifanacg.com/template/dsn2/static/img/fav.png",
+          "searchConfig": {
+            "searchUrl": "https://dm.xifanacg.com/search.html?wd={keyword}",
+            "selectorName": "body > div.box-width > div > div.search-list > div > div.detail-info > a > h3",
+            "selectorLink": "body > div.box-width > div > div.search-list > div > div.detail-info > a"
+          },
+          "episodeConfig": {
+            "isMultiLine": true,
+            "selectorLineName": "body > div.box-width.cor5 > div.anthology > div.anthology-tab > div > a.swiper-slide",
+            "selectorLineLink": "body > div.box-width.cor5 > div.anthology > div.anthology-list > div",
+            "selectorEpisodeName": "div > ul > li > a",
+            "selectorEpisodeLink": "div > ul > li > a",
+            "matchVideoUrl": "(?!.*&url)^https?:\/\/.*.mp4"
+          }
+        }
+      },
+      {
+        "featureID": "web-selector",
+        "version": "beta",
+        "config": {
+          "name": "girigiri愛動漫",
+          "baseUrl": "https://anime.girigirilove.com/",
+          "iconUrl": "https://anime.girigirilove.com/upload/site/20231121-1/fdd2694db66628a9deadd86e50aedd43.png",
+          "searchConfig": {
+            "searchUrl": "https://anime.girigirilove.com/search/-------------/?wd={keyword}",
+            "selectorName": "body > div.box-width > div > div.row-9 > div > div > div.right.rel.flex-auto > div.thumb-content > div.thumb-txt.cor4",
+            "selectorLink": "body > div.box-width > div > div.row-9 > div > div > div.right.rel.flex-auto > div.thumb-menu.flex > a.button.cr3"
+          },
+          "episodeConfig": {
+            "isMultiLine": false,
+            "selectorLineName": "body > div.box > div.box-width > div.animated > div > div.swiper-wrapper > a",
+            "selectorLineLink": "body > div.box > div.box-width > div.animated > div.anthology-list > div > div > ul",
+            "selectorEpisodeName": "li > a",
+            "selectorEpisodeLink": "li > a",
+            "matchVideoUrl": "^(?!.*url=).*https.*playlist.m3u8"
+          }
+        }
+      }
+    ]
+  }
+}
