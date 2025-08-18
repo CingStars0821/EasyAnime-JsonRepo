@@ -44,6 +44,29 @@
             "matchVideoUrl": "^(?!.*url=).*https.*playlist.m3u8"
           }
         }
+      },
+      ,
+      {
+        "featureID": "web-selector",
+        "version": "beta",
+        "config": {
+          "name": "稀饭动漫（备用）",
+          "baseUrl": "https://dm1.xfdm.pro/",
+          "iconUrl": "https://dm1.xfdm.pro/upload/site/20240308-1/813e41f81d6f85bfd7a44bf8a813f9e5.png",
+          "searchConfig": {
+            "searchUrl": "https://dm1.xfdm.pro/search.html?wd={keyword}",
+            "selectorName": "body > div.box-width > div > div.row-9 > div > div > div.right.rel.flex-auto > div.thumb-content > div.thumb-txt.cor4.hide",
+            "selectorLink": "body > div.box-width > div > div.row-9 > div > div > div.right.rel.flex-auto > div.thumb-menu.flex > a.button.cr3"
+          },
+          "episodeConfig": {
+            "isMultiLine": true,
+            "selectorLineName": "body > div.box-width.cor5 > div.anthology > div.anthology-tab > div > a.swiper-slide",
+            "selectorLineLink": "body > div.box-width.cor5 > div.anthology > div.anthology-list > div",
+            "selectorEpisodeName": "div > ul > li > a",
+            "selectorEpisodeLink": "div > ul > li > a",
+            "matchVideoUrl": "(?!.*&url)^https?:\/\/.*.mp4"
+          }
+        }
       }
     ]
   }
