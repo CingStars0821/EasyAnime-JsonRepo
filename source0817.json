@@ -85,12 +85,13 @@
             "selectorLineLink": "body > main > div > div.row.mt-1-25.mb-5 > div > div > div > div > div.anime-episode.overflow-auto.tab-pane.fade",
             "selectorEpisodeName": "a",
             "selectorEpisodeLink": "a",
-            "matchVideoUrl": "^(?!.*url=).*https.*index.m3u8"
+            "matchVideoUrl": "^(?!.*url=).*https.*(index.m3u8)$"
           }
         }
       }
     ]
   }
 }
+
 
 
