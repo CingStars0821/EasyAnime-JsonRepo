@@ -45,7 +45,6 @@
           }
         }
       },
-      ,
       {
         "featureID": "web-selector",
         "version": "beta",
@@ -93,4 +92,5 @@
     ]
   }
 }
+
 
