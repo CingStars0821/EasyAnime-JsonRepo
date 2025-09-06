@@ -3,7 +3,7 @@
     "animeSources": [
       {
         "featureID": "web-selector",
-        "version": "beta",
+        "version": "1.0",
         "config": {
           "name": "稀饭动漫",
           "baseUrl": "https://dm.xifanacg.com/",
@@ -20,12 +20,20 @@
             "selectorEpisodeName": "div > ul > li > a",
             "selectorEpisodeLink": "div > ul > li > a",
             "matchVideoUrl": "(?!.*&url)^https?:\/\/.*.mp4"
+          },
+          "expansionConfig": {
+            "parserConfig": {
+              "type": "HTML-Parser",
+              "selectorTag": "body > main > div > div.row.mt-3 > div > div > script:nth-child(1)",
+              "matchVideoUrl": "",
+              "parserMode": "direct"
+            }
           }
         }
       },
       {
         "featureID": "web-selector",
-        "version": "beta",
+        "version": "1.0",
         "config": {
           "name": "girigiri愛動漫",
           "baseUrl": "https://anime.girigirilove.com/",
@@ -42,12 +50,20 @@
             "selectorEpisodeName": "li > a",
             "selectorEpisodeLink": "li > a",
             "matchVideoUrl": "^(?!.*url=).*https.*playlist.m3u8"
+          },
+          "expansionConfig": {
+            "parserConfig": {
+              "type": "HTML-Parser",
+              "selectorTag": "body > div.player.bj > div > div.player-left > script:nth-child(2)",
+              "matchVideoUrl": "",
+              "parserMode": "base"
+            }
           }
         }
       },
       {
         "featureID": "web-selector",
-        "version": "beta",
+        "version": "1.0",
         "config": {
           "name": "稀饭动漫（备用）",
           "baseUrl": "https://dm1.xfdm.pro/",
@@ -64,12 +80,20 @@
             "selectorEpisodeName": "div > ul > li > a",
             "selectorEpisodeLink": "div > ul > li > a",
             "matchVideoUrl": "(?!.*&url)^https?:\/\/.*.mp4"
+          },
+          "expansionConfig": {
+            "parserConfig": {
+              "type": "HTML-Parser",
+              "selectorTag": "body > div.box-width.player.player-style-1 > div.player-left > script:nth-child(4)",
+              "matchVideoUrl": "",
+              "parserMode": "direct"
+            }
           }
         }
       },
       {
         "featureID": "web-selector",
-        "version": "beta",
+        "version": "1.0",
         "config": {
           "name": "饭团动漫",
           "baseUrl": "https://acgfta.com/",
@@ -85,13 +109,18 @@
             "selectorLineLink": "body > main > div > div.row.mt-1-25.mb-5 > div > div > div > div > div.anime-episode.overflow-auto.tab-pane.fade",
             "selectorEpisodeName": "a",
             "selectorEpisodeLink": "a",
-            "matchVideoUrl": "^(?!.*url=).*https.*(index.m3u8)$"
+            "matchVideoUrl": "^(?!.*url=).*https.*index.m3u8"
+          },
+          "expansionConfig":{
+            "parserConfig": {
+              "type": "HTML-Parser",
+              "selectorTag": "body > main > div > div.row.mt-3 > div > div > script:nth-child(1)",
+              "matchVideoUrl": "",
+              "parserMode": "direct"
+            }
           }
         }
       }
     ]
   }
 }
-
-
-
